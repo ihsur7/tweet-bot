@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import secretid
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,10 +28,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # Twitter credentials
-API_KEY = "QvZAaw9tLNcyKkRoYKuZPwsGb"
-API_KEY_SECRET = "Ce4DaU6pGDk6tszsidPZaFuh7OJjrRmNIFhXG5AdPjKtPsFEyt"
-ACCESS_TOKEN = "1119219374-1xynkWZUMbULScrAyitoEhGOJRYyT6nHoUGzkiY"
-ACCESS_TOKEN_SECRET = "v6uNHJWIeSFXYJK4rMkY0XDtoOsI2goJFlUe6yDWUMIyd"
+API_KEY = secretid.API_KEY
+API_KEY_SECRET = secretid.API_KEY_SECRET
+ACCESS_TOKEN = secretid.ACCESS_TOKEN
+ACCESS_TOKEN_SECRET = secretid.ACCESS_TOKEN_SECRET
 
 
 # Application definition
